@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-iOSDemo/Pods-iOSDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${PODS_ROOT}/../FlutterEngine/App.framework
+${PODS_ROOT}/../FlutterEngine/Flutter.framework
