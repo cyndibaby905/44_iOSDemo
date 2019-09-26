@@ -8,20 +8,25 @@
 
 #import "AppDelegate.h"
 #import <Flutter/Flutter.h>
+#import "FlutterPluginNetworkPlugin.h"
+#import "SharedPreferencesPlugin.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     FlutterViewController *vc = [[FlutterViewController alloc]init];
+    
+
+    [FlutterPluginNetworkPlugin registerWithRegistrar:[vc registrarForPlugin:@"FlutterPluginNetworkPlugin"]];
+    
+    [FLTSharedPreferencesPlugin registerWithRegistrar:[vc registrarForPlugin:@"FLTSharedPreferencesPlugin"]];
+
+    
     [vc setInitialRoute:@"defaultRoute"]; //路由标识符
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];

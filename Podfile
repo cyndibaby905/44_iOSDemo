@@ -3,7 +3,9 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'iOSDemo' do
-  pod 'FlutterEngine', :path => './'
+  pod 'Flutter', :path => 'Flutter'
+  pod 'shared_preferences', :path => 'shared_preferences'
+  pod 'flutter_plugin_network', :path => 'flutter_plugin_network'
 end
 
 

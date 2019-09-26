@@ -14,28 +14,37 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - Bugly (2.5.0)
-  - FlutterEngine (0.1.0):
+  - Flutter (0.1.0):
     - AFNetworking
+  - flutter_plugin_network (0.0.1):
+    - AFNetworking
+    - Flutter
+  - shared_preferences (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
-  - Bugly
-  - FlutterEngine (from `./`)
+  - Flutter (from `Flutter`)
+  - flutter_plugin_network (from `flutter_plugin_network`)
+  - shared_preferences (from `shared_preferences`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
-    - Bugly
 
 EXTERNAL SOURCES:
-  FlutterEngine:
-    :path: "./"
+  Flutter:
+    :path: Flutter
+  flutter_plugin_network:
+    :path: flutter_plugin_network
+  shared_preferences:
+    :path: shared_preferences
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
-  FlutterEngine: 67050831cb766ec8a65085095f51031b9b1131d5
+  Flutter: 3d4b6abf6676fd51298062466dd00b5319105680
+  flutter_plugin_network: 72c41772a4d53d928247e300ce88c3d3d8b2066f
+  shared_preferences: 1feebfa37bb57264736e16865e7ffae7fc99b523
 
-PODFILE CHECKSUM: 19f84612d40d7f5aab047a47a37228fe71007830
+PODFILE CHECKSUM: 23beb3b23d5c01da431eca3263766405cb01e778
 
 COCOAPODS: 1.7.5
